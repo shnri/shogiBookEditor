@@ -1,0 +1,80 @@
+@charset "UTF-8";
+pre {
+    font-size: 11px;
+}
+.zumen {
+    color: black;
+    background-color: white;
+    vertical-align: top;
+    -ms-overflow-style: none; /* IEスクロールバーが勝手に出てくるので非表示 */
+}
+
+.zumen div {
+    font-family: "Sawarabi Mincho";
+}
+
+pre.shogizumen {
+    width: 216px;
+    /* margin: 0;
+    padding: 0; */
+    font-family: "Noto Serif JP";
+    font-size: 13px;
+    line-height: 1;
+}
+.small-zumen > pre.shogizumen {
+    width: 216px; /* +24n px */
+}
+.medium-zumen > pre.shogizumen {
+    width: 240px;
+}
+.large-zumen > pre.shogizumen {
+    width: 312px;
+    height: 260px;
+}
+.big-zumen > pre.shogizumen {
+    width: 432px;
+    height: 380px;
+}
+
+.zumen figcaption {
+    width: 100%;
+    margin-left: -5px; /* 図面右の漢数字部分を考慮して中央に寄るように調整 */
+    white-space: nowrap;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Noto Serif JP";
+}
+
+.small-zumen > figcaption {
+    font-size: 12px;
+    height: 15px;
+}
+
+.medium-zumen > figcaption {
+    font-size: 14px;
+    height: 18px;
+}
+
+.large-zumen > figcaption {
+    font-size: 18px;
+    height: 30px;
+}
+
+.big-zumen > figcaption {
+    font-size: 18px;
+    height: 30px;
+}
+
+.szLastMove {
+    font-weight: bold;
+}
+.zumen .szLastMove {
+    font-family: "Sawarabi Gothic";
+}
+.hdiv:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}

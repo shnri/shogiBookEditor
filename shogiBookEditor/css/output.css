@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+.guide-block {
+  border-top: solid 5px rgb(143, 134, 134);
+  display: flex;
+  height: 57mm;
+  width: 118mm;
+}
+
+.zumen-comment-block {
+  width: 59mm;
+  height: 57mm;
+  display: flex;
+}
+
+.output-node-title {
+  width: 14mm;
+  height: 157mm;
+  margin-left: 3mm;
+  border: double 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+  padding-top: 20px;
+}
+
+.output-1zumen-title {
+  font-family: "Noto Serif JP";
+  width: 118mm;
+  height: 10mm;
+  font-weight: bold;
+  text-indent: -19px;
+  align-items: center;
+  font-size: 30px;
+  padding-bottom: 25px;
+}
+
+.output-2zumen-title {
+  width: 8mm;
+  height: 70mm;
+  margin-left: 10mm;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+  padding-top: 20px;
+}
+
+div[class*="output-comment-"] {
+  text-align: start;
+}
+
+.output-comment-guide {
+  padding-top: 5px;
+  padding-right: 10px;
+  width: 37mm;
+  height: 57mm;
+  column-count: 1;
+  font-size: 10px;
+}
+
+.output-comment-guidetitle {
+  padding-right: 1.2mm;
+  width: 23mm;
+  height: 57mm;
+  background-color: rgb(230, 230, 230);
+}
+.num {
+  text-combine-upright: all;
+  font-family: "Noto Serif JP";
+  text-orientation: mixed;
+}
+
+.output-comment-1zumen {
+  width: 98mm;
+  height: 86mm;
+  column-count: 1;
+}
+
+.output-comment-1zumenNotTitle {
+  width: 118mm;
+  height: 86mm;
+  column-count: 1;
+}
+
+.output-comment-1zumenTreeDiagram {
+  width: 118mm;
+  height: 123mm;
+  column-count: 1;
+  font-size: 13px;
+  line-height: 1;
+  text-orientation: unset;
+  margin-top: -28px;
+}
+
+.output-comment-2zumen {
+  width: 54mm; /* 118mm - 64mm */
+  height: 173mm;
+  column-fill: auto;
+  column-count: 2;
+  column-gap: 5mm;
+}
+
+.output-comment-2zumenTop {
+  width: 118mm;
+  height: 108mm;
+  column-count: 1;
+}
+
+.output-comment-3zumen {
+  width: 54mm;
+  height: 173mm;
+  column-fill: auto;
+  column-count: 2;
+  column-gap: 5mm;
+}
+
+.output-comment-nextMove {
+  font-family: "Noto Serif JP";
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14.5px;
+}
+
+.output-comment-verticalTextOnly1Lines {
+  width: 118mm;
+  height: 173mm;
+}
+
+.output-comment-verticalTextOnly2Lines {
+  width: 118mm;
+  height: 173mm;
+  column-fill: auto;
+  column-count: 2;
+  column-gap: 5mm;
+}
+
+.output-comment-horizontalTextOnly {
+  font-family: "Noto Serif JP";
+  font-size: 14.5px;
+  width: 448px;
+  height: 173mm;
+}
+
+.output-comment-cover {
+  column-count: 1;
+  width: 118mm;
+  height: 173mm;
+  font-size: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* 高さ 中央寄せ */
+}
+
+.output-zumen {
+  width: 59mm;
+  height: 173mm;
+}
+
+.output-medium-zumen {
+  width: 64mm;
+  height: 88.5mm;
+}
+
+.output-zumen-1zumen {
+  width: 98mm;
+  height: 87mm;
+}
+
+.output-zumen-4zumen {
+  width: 59mm;
+  height: 80mm;
+}
+
+.output-zumen-6zumen {
+  width: 59mm;
+  height: 55mm;
+}
+
+.output-area {
+  /* A5 559.44px  793.8px*/
+  width: 118mm; /* 148 - (15 + 15) */
+  height: 197.8mm; /* 210 - (25 + 12) + 24.8mm(header)*/
+  /* padding-top: 24.8mm;*/
+  padding-right: 15mm;
+  padding-bottom: 12mm;
+  padding-left: 15mm;
+  background: white;
+  box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3); /* ドロップシャドウ */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* 折り返し */
+  justify-content: flex-end;
+}
+
+.output-area-inside {
+  height: 160mm;
+}
+
+.output-area-4zumen {
+  height: 160mm;
+  width: 118mm;
+  flex-direction: row;
+  display: flex;
+}
+
+.output-area-6zumen {
+  width: 118mm;
+  flex-direction: row;
+  display: flex;
+}
+
+.output-zumen-area {
+  flex-direction: row;
+  width: 64mm;
+}
+
+.output-zumen-area-2 {
+  height: 65mm;
+  flex-flow: row-reverse;
+  display: flex;
+}
+
+.output-answer-area {
+  display: flex;
+  border: solid 1px;
+  width: 118mm;
+  height: 56mm;
+}
+
+.output-question-area {
+  border: solid 1px;
+  width: 118mm;
+  height: 112mm;
+}
+
+.output-answer-zumen-area {
+  flex-direction: row;
+  width: 64mm;
+}
+
+.output-question-zumen-area {
+  flex-direction: row;
+  width: 64mm;
+}
+
+.output-area-header {
+  font-family: "Noto Serif JP";
+  flex-direction: row;
+  width: 118mm;
+  height: 24.8mm;
+  display: flex;
+  align-items: center; /* 高さ 中央寄せ */
+  font-size: 11px;
+  margin: 0px 3px;
+}
+
+.zumen-1zumen {
+  height: 330px;
+  display: flex;
+  justify-content: center;
+}

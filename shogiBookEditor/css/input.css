@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+.zumen-textarea {
+    font-size: 12px;
+    width: 240px;
+    height: 210px;
+}
+
+input[name="input-node-title"] {
+    margin-top: 5px;
+    width: 23em;
+}
+
+.input-zumen-footer {
+    text-align: center;
+    margin-top: 2px;
+    width: 240px;
+    height: 20px;
+}
+
+input[name="zumen-header"] {
+    text-align: center;
+    margin-bottom: 2px;
+    width: 240px;
+}
+
+[class*="input-comment-"] {
+    width: 22em;
+    height: 17em;
+}
+
+.input-comment-guidetitle {
+    width: 18em;
+    height: 5em;
+}
+
+.input-comment-1zumenTreeDiagram {
+    width: 100%;
+    height: 36em;
+    white-space: pre;
+}
+
+.input-comment-guide {
+    width: 22em;
+    height: 8em;
+}
+
+.input-comment-cover {
+    width: 18em;
+    height: 2em;
+}
+
+.input-comment-area {
+    height: 210mm;
+    width: 100mm;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* 高さ 中央寄せ */
+    /*justify-content: center;  幅 中央寄せ */
+    margin-left: 2mm;
+    flex-wrap: wrap; /* 複数行に分割 横幅狭いので1列になる*/
+}
+
+.input-zumen-area {
+    height: 210mm;
+    width: 70mm;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

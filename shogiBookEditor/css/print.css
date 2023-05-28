@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@media print {
+    /* この中に印刷時のみの指定を書く */
+    #book {
+        text-align: center;
+        margin: 0px;
+    }
+    /* 背景有効にした場合を考慮 */
+    .output-area {
+        box-shadow: none;
+    }
+    body {
+        background: white;
+    }
+}

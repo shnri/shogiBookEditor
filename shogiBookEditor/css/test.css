@@ -1,0 +1,28 @@
+/* 縦横比一定の正方形 */
+.rect-wrap {
+    margin-left: 10px;
+    width: 5%;
+}
+.rect {
+    width: 50%;
+    padding-top: 50%;
+    background-color: #29d632;
+}
+
+input[type="radio"] {
+    display: none; /* ラジオボタンを非表示にする */
+}
+.label {
+    display: flex;
+    align-items: center; /* 高さ 中央寄せ */
+    text-align: center;
+    cursor: pointer;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+input[type="radio"]:checked + .label {
+    background: skyblue;
+    color: #ffffff;
+    border-radius: 2px;
+    border: 1px solid #006dd9;
+}

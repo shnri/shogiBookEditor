@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.vertical-text {
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+}
+
+.output-comment-3zumen {
+    column-count: 1 !important;
+}
+
+.output-comment-2zumen {
+    column-count: 1 !important;
+}
+
+.output-comment-verticalTextOnly2Lines {
+    column-count: 1 !important;
+}

@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.output-zumen-header:before {
+    content: attr(data-text) "【";
+}
+.output-zumen-header:after {
+    content: "】";
+}

@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/* 印刷した際一枚目だけ上部に隙間が空く ヘッダーのせいか*/
+@page {
+    size: A5;
+    margin: 0;
+}
+
+#book {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.page {
+    size: A5;
+    page-break-after: always; /* 改ページの制御 */
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+body {
+    background: #eee;
+}
+
+.vertical-text {
+    font-family: "Noto Serif JP";
+    font-size: 14.5px;
+    line-height: 1.8em;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl; /* 縦書き */
+    text-orientation: upright; /* 縦書き */
+    text-align: justify; /* 行末を揃える */
+    /*text-indent: 1em;*/
+}
+
+.horizontal-text {
+    font-family: "Noto Serif JP";
+    font-size: 14.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify; /* 行末を揃える */
+    hanging-punctuation: allow-end;
+    /*text-indent: 1em;*/
+}
+
+.vertical-text .title {
+    font-weight: bold;
+    font-family: "Sawarabi Gothic";
+}
+
+.text-combine {
+    -webkit-text-combine: horizontal;
+    -ms-text-combine-horizontal: all;
+    text-combine-upright: all;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-item {
+    flex-direction: row;
+}
+
+figure {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+textarea {
+    box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3); /* ドロップシャドウ */
+}
+
+.ui-selecting {
+    background-color: #40a5fe3b;
+}
+.ui-selected {
+    background-color: #40a5fe7a;
+    cursor: n-resize;
+}
+
+header {
+    position: fixed; /* スクロール固定 */
+    top: 0;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    z-index: 20;
+    height: 60px;
+    box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3); /* ドロップシャドウ */
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+.smallImg {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    margin-bottom: -3;
+}
+
+.icon {
+    width: 50px;
+    height: 60px;
+    flex-direction: row;
+    cursor: pointer;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.icon:hover {
+    box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3); /* ドロップシャドウ */
+}
+
+label,
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-title {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
